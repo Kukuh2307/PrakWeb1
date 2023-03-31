@@ -1,0 +1,23 @@
+/* tugas 1 */
+.tabel{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+}
+.header{
+    background-color: salmon;
+    font-size: 3rem;
+}
+tr{
+    height: 3rem;
+}
+.baris{
+    background-color: rgb(163, 163, 163);
+    color: aliceblue;
+}
+.link{
+    font-size: 2rem;
+    text-decoration: none;
+}

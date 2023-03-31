@@ -1,0 +1,30 @@
+html,
+head,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+.tabel{
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+.FF80FF{
+    background-color: #FF80FF;
+}
+.K99FF33{
+    background-color: #99FF33;
+}
+.K00FFFF{
+    background-color: #00FFFF;
+}
