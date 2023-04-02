@@ -10,6 +10,7 @@ body {
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -22,6 +23,10 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
+}
+.slide{
+    right: 100vh;
+    transition: 2s all;
 }
 
 .container {
@@ -57,6 +62,8 @@ body {
     font-size: 1.5rem;
     color: aliceblue;
     padding-right: 10rem;
+
+
 }
 
 .navbar a {
@@ -87,10 +94,10 @@ body {
 .container-portfolio .shape img {
     background-repeat: no-repeat;
     transform: scaleX(-1) scaleY(-1);
-    height: 35rem;
+    height: 33rem;
     z-index: -1;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     top: 0;
     left: 0;
@@ -451,9 +458,30 @@ body {
     .logo {
         font-size: 50%;
     }
-
-    .navbar {
-        gap: 0.6rem;
+    #navbar{
+        display: block;
+        position: absolute;
+        padding: 2rem 3rem;
+        top: 5rem;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
+    }
+    .container .navbar a {
+        color: var(--black);
+        width: 15rem;
+        display: inline-block;
+        font-size: 1rem;
+        padding: 1rem 0rem;
+    }
+    .container .navbar a:hover{
+        color: var(--primary);
+        padding-left: 1rem;
+    }
+    .coba{
+        background-color: salmon;
     }
 
     .navbar a {
@@ -462,10 +490,6 @@ body {
 
     .container .hamburger {
         display: inline-block;
-    }
-
-    .container .hamburger img {
-        padding-top: 1rem;
     }
 
     .container-portfolio {
@@ -513,9 +537,6 @@ body {
         font-size: 12px;
     }
 
-    /* #navbar {
-        display: none;
-    } */
     .container .hamburger {
         position: relative;
         flex-direction: column;
@@ -542,12 +563,6 @@ body {
         border-radius: 3px;
         transition: all 0.5s;
     }
-    .container .hamburger .slide{
-        opacity: 1;
-        right:2rem;
-    transition: .4s linear;
-    background-color: salmon;
-    }
 
     /* animation hamburger menu */
     .container .hamburger span:nth-child(2){
@@ -568,33 +583,6 @@ body {
     .container .hamburger input:checked ~span:nth-child(3) {
         opacity: 0;
         transform: scale(0)
-    }
-
-    .container .navbar {
-        display: inline-block;
-        margin-top: 25rem;
-        width: 16rem;
-        right: 1vh;
-        padding: 2rem 1rem;
-        box-sizing: border-box;
-        position: absolute;
-        border-radius: 6px;
-        background-color: white;
-        box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
-        -webkit-box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
-    }
-
-    .container .navbar a {
-        color: var(--black);
-        width: 15rem;
-        display: inline-block;
-        font-size: 1rem;
-        padding: 1rem 0rem;
-    }
-    .container .navbar a:hover{
-        color: var(--primary);
-        padding-left: 1rem;
     }
 
     .project {

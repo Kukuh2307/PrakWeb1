@@ -1,6 +1,6 @@
-const navbar = document.querySelector('.navbar');
-const hamburger = document.querySelector('.hamburger');
+const navbar = document.getElementById('navbar');
+const hamburger = document.getElementById('hamburger');
 
 hamburger.addEventListener('click',function(){
-    navbar.classList.toggle('slide')
-})
+    navbar.classList.toggle('slide');
+});
