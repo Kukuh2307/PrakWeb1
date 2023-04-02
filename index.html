@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,20 +15,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
         rel="stylesheet" />
 </head>
+
 <body>
     <!-- navbar -->
     <div class="container shadow">
         <div class="logo">
             <h1>KISAWA</h1>
         </div>
-        <div class="hamburger" id="hamburger">
-            <img src="icons/hamburger.svg" alt="">
-        </div>
         <div class="navbar" id="navbar">
             <a href="#Profile">Profile</a>
             <a href="#About">Tentang Saya</a>
             <a href="#Project">Project Ngobar</a>
             <a href="#Tugas">Tugas Pemrograman Web</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
 
@@ -54,7 +60,9 @@
     <!-- About -->
     <div class="tentang-saya" id="About">
         <h1>Tentang Saya</h1>
-        <p>Saya adalah Mahasiswa Universitas Nusantara PGRI Kediri,Saat ini saya adalah mahasisawa aktif <span>Program Studi Teknik Informatika</span>. Sejak SMP saya sudah mulai tertarik dengan dunia Internet dan saat SMK saya memutuskan untuk mengambil Jurusan Teknik Komputer dan Jaringan.</p>
+        <p>Saya adalah Mahasiswa Universitas Nusantara PGRI Kediri,Saat ini saya adalah mahasisawa aktif <span>Program
+                Studi Teknik Informatika</span>. Sejak SMP saya sudah mulai tertarik dengan dunia Internet dan saat SMK
+            saya memutuskan untuk mengambil Jurusan Teknik Komputer dan Jaringan.</p>
     </div>
 
     <!-- Project -->
@@ -68,17 +76,17 @@
                 </div>
                 <div class="card">
                     <a href="https://kukuh2307.github.io/KisawaMart/"><span>Marketplace</span></a>
-                    
+
                 </div>
                 <div class="card">
                     <a href="https://kukuh2307.github.io/Angkringan-Remaja/"><span>Kedai Kopi</span></a>
                 </div>
                 <div class="card">
                     <a href="https://nextjs-jadoo.vercel.app/"><span>Web Travel</span></a>
-                </div>  
+                </div>
             </div>
         </div>
-    </div>  
+    </div>
 
     <!-- Tugas Pemrograman Web -->
     <div class="tugas" id="Tugas">
@@ -87,18 +95,25 @@
 
         <div class="list">
             <ul>
-                <li><a href="Pertemuan1Praktikum/table.html"><h4>Pertemuan 1. (Praktikum) Menegnal Tag Header,a,img,table dan form</h4></a></li>
-                <li><a href="Pertemuan3Teori/index.html"><h4>Pertemuan 3. (Teori) Mengenal CSS (Cascading Style Sheet) </h4></a></li>
-                <li><a href="#"><h4>Pertemuan 4. </h4></a></li>
+                <li><a href="Pertemuan1Praktikum/table.html">
+                        <h4>Pertemuan 1. (Praktikum) Menegnal Tag Header,a,img,table dan form</h4>
+                    </a></li>
+                <li><a href="Pertemuan3Teori/index.html">
+                        <h4>Pertemuan 3. (Teori) Mengenal CSS (Cascading Style Sheet) </h4>
+                    </a></li>
+                <li><a href="#">
+                        <h4>Pertemuan 4. </h4>
+                    </a></li>
             </ul>
         </div>
     </div>
 
     <!-- footer -->
     <div class="container-footer">
-        <div class="tittle">            
+        <div class="tittle">
             <h1>KISAWA</h1>
-            <p>Adalah Sebuah Website Sederhana yang digunakan terutama untuk pengumpulan tugas mata kuliah Pemrograman Web 1</p>
+            <p>Adalah Sebuah Website Sederhana yang digunakan terutama untuk pengumpulan tugas mata kuliah Pemrograman
+                Web 1</p>
         </div>
 
         <div class="feature">
@@ -114,5 +129,8 @@
             <p>Jl.Jembatan Timbangan Pojok Kec.Ngantru Kab.Tulungagung Prov.Jawa Timur.(66252)</p>
         </div>
     </div>
+
+    <!-- js -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -79,10 +79,12 @@ body {
     justify-content: space-between;
     position: relative;
 }
-.container-portfolio .shape{
+
+.container-portfolio .shape {
     height: 34rem;
 }
-.container-portfolio .shape img{
+
+.container-portfolio .shape img {
     background-repeat: no-repeat;
     transform: scaleX(-1) scaleY(-1);
     height: 35rem;
@@ -248,9 +250,12 @@ body {
 }
 
 .card {
-    background: #F2994A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
@@ -264,7 +269,8 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
     padding: 3rem 5rem;
     box-sizing: border-box;
 }
-.card a{
+
+.card a {
     color: var(--black);
     font-weight: bold;
     margin: auto;
@@ -293,7 +299,8 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
     background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC);
     background: linear-gradient(to bottom, #2B32B2, #1488CC);
 }
-.card a:hover{
+
+.card a:hover {
     color: white;
 }
 
@@ -310,30 +317,35 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
     color: var(--black);
     font-size: 3.5rem;
 }
-.tugas p{
+
+.tugas p {
     font-size: 30px;
     text-align: center;
     font-weight: 300;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.list{
+
+.list {
     width: 100%;
     padding: 5rem 2rem;
 }
-.list ul li{
+
+.list ul li {
     border-bottom: 2px solid var(--black);
     padding: 1rem 0rem;
 }
-.list ul li a{
+
+.list ul li a {
     color: var(--black);
     font-size: 1.5rem;
     text-align: justify;
 }
-.list ul li:hover{
+
+.list ul li:hover {
     padding-left: 2rem;
 }
 
-.container-footer{
+.container-footer {
     width: 80%;
     margin: auto;
     padding: 5rem 3rem;
@@ -344,29 +356,40 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
     justify-content: space-around;
     align-items: center;
 }
-.container-footer .tittle{
+
+.container-footer .tittle {
     color: aliceblue;
     width: 30%;
 }
-.container-footer .tittle h1,.container-footer .feature h1,.container-footer .address h1{
+
+.container-footer .tittle h1,
+.container-footer .feature h1,
+.container-footer .address h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.container-footer .feature{
+
+.container-footer .feature {
     color: aliceblue;
     width: 30%;
     font-size: 1.5rem;
 }
-.container-footer .feature a{
+
+.container-footer .feature a {
     text-decoration: none;
     color: aliceblue;
     display: block;
     font-weight: 300;
 }
-.container-footer .feature a:hover, .container-footer .feature h1:hover,.container-footer .tittle h1:hover, .container-footer .address h1:hover{
+
+.container-footer .feature a:hover,
+.container-footer .feature h1:hover,
+.container-footer .tittle h1:hover,
+.container-footer .address h1:hover {
     color: var(--secondary);
 }
-.container-footer .address{
+
+.container-footer .address {
     color: aliceblue;
     width: 30%;
     font-size: 1.5rem;
@@ -393,7 +416,8 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
     .container-portfolio {
         padding: 13rem 10rem 10rem 8rem;
     }
-    .container-portfolio .shape img{
+
+    .container-portfolio .shape img {
         margin-top: -3rem;
     }
 
@@ -453,7 +477,8 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
         text-align: center;
         width: 100%;
     }
-    .container-portfolio .shape img{
+
+    .container-portfolio .shape img {
         margin-top: -11rem;
         position: absolute;
     }
@@ -488,8 +513,88 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
         font-size: 12px;
     }
 
-    #navbar {
+    /* #navbar {
         display: none;
+    } */
+    .container .hamburger {
+        position: relative;
+        flex-direction: column;
+        width: 20px;
+        justify-content: space-between;
+        z-index: 100;
+        overflow: hidden;
+    }
+    .container .hamburger input{
+        position: absolute;
+        width: 40px;
+        height: 28px;
+        left: -6px;
+        top: -3px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .container .hamburger span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin: 3px;
+        background-color: aliceblue;
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+    .container .hamburger .slide{
+        opacity: 1;
+        right:2rem;
+    transition: .4s linear;
+    background-color: salmon;
+    }
+
+    /* animation hamburger menu */
+    .container .hamburger span:nth-child(2){
+        transform-origin: 0 0;
+    }
+    .container .hamburger span:nth-child(4){
+        transform-origin: 0 100%;
+    }
+    /* onclick */
+    .container .hamburger input:checked ~span:nth-child(2) {
+        background-color: seashell;
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+    .container .hamburger input:checked ~span:nth-child(4) {
+        background-color: seashell;
+        transform: rotate(-45deg)translate(-1px, 0);
+    }
+    .container .hamburger input:checked ~span:nth-child(3) {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    .container .navbar {
+        display: inline-block;
+        margin-top: 25rem;
+        width: 16rem;
+        right: 1vh;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 6px;
+        background-color: white;
+        box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: -4px 15px 34px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    .container .navbar a {
+        color: var(--black);
+        width: 15rem;
+        display: inline-block;
+        font-size: 1rem;
+        padding: 1rem 0rem;
+    }
+    .container .navbar a:hover{
+        color: var(--primary);
+        padding-left: 1rem;
     }
 
     .project {
@@ -509,26 +614,33 @@ background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, 
         font-weight: 300;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    .container-card .card{
-        width: 100% ;
+
+    .container-card .card {
+        width: 100%;
     }
-    .tugas h1{
+
+    .tugas h1 {
         font-size: 1.5rem;
     }
-    .tugas p{
+
+    .tugas p {
         font-size: 1rem;
     }
 
-    .container-footer{
+    .container-footer {
         display: block;
         margin: auto;
         padding: 2rem;
         width: 199%;
     }
-    .container-footer .feature h1,.container-footer .address h1{
+
+    .container-footer .feature h1,
+    .container-footer .address h1 {
         margin-top: 1rem;
     }
-    .container-footer .feature a,.container-footer .address p{
+
+    .container-footer .feature a,
+    .container-footer .address p {
         font-size: 1rem;
     }
 }
